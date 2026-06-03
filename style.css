@@ -4,9 +4,15 @@
 }
 body { 
     margin:0;
-    background: #ffc4dd;
-    color #222;
+    background: #fef8fb;
+    color: #f8f09e;
     font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 2rem
+}
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color:#ffabf0
 }
 
 #all-contents {
@@ -15,9 +21,12 @@ body {
     margin:0 auto;
     padding: 32px 40px;
 }
+.content {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
 main {
     display: grid;
-    grid-template-coloumns: minmax(220px, 1fr)
+    grid-template-columns: minmax(220px, 1fr)
     minmax(420px, 1.6fr);
     align-items: center;
     min-height: calc(100vh - 160px);
@@ -34,13 +43,13 @@ align-items: flex-start;
 gap: 12px;
 }
 #interests {
-    margin-top: 32px
+    margin-top: 32px;
     width: 100%;
 }
     
 #interests h3 {
     margin: 0 0 12px;
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -75,20 +84,20 @@ gap: 12px;
     transform: translateY(-2px);
 }
 #interests h3 {
-    color: pink;
+    color: rgb(183, 240, 232);
 }
 #interests li {
     background: lavenderblush;
-    border-color: rgb(255, 156, 201);
-    color:#ff55da;
+    border-color: rgb(254, 224, 254);
+    color:#e2aad6;
 }
 interests li:hover {
-    background: #be76d4
+    background: #be76d4;
     color: #fff;
 }
 .sidebar-img {
     width: 100%;
-    max-width: 760px;
+    max-width: 470px;
     aspect-ratio: 3 / 4;
     object-fit: cover;
     display: block;
@@ -114,7 +123,7 @@ nav {
 
 nav h1 {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 0.9 rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -130,7 +139,7 @@ nav h1 {
 }
 
 .nav-li a {
-    color: #666;
+    color: #efc2c2;
     text-decoration: none;
     font-size: 0.85rem;
     font-weight: 500;
@@ -150,7 +159,7 @@ nav {
     margin-bottom: 48px;
     padding: 16px 24px;
     background: #fff;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #ead1ff;
     border-radius: 12px;
 }
 
@@ -171,21 +180,21 @@ nav h1 {
     padding: 0;
 }
 nav {
-    background: #f4f4ff;
-    border-color: #e5e5ff;
+    background: #eaceff;
+    border-color: #d6aaff;
 }
 
 nav h1 {
-    color: #ff7efb;
+    color: #d67eff;
 }
 
 .nav-li a {
     color: #a8b2d8;
 }
 .nav-li a {
-    color: #bff4cf;
+    color: #c0eee7;
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 500;
     padding: 6px 14px;
     border-radius: 8px;
@@ -195,4 +204,56 @@ nav h1 {
 .nav-li a:hover {
     background: #ffeba5;
     color: #b6fbfa;
+}
+ /* Portfolio styles */
+.content h1 {
+  color: rgb(207, 255, 253);
+}
+
+#portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#portfolio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #bf7ceb;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+#portfolio a:hover {
+  background: #ffd8f4;
+  color: #fff;
+  transform: translateX(4px);
+}
+
+#portfolio a::after {
+  content: "->";
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+#portfolio a:hover::after {
+  opacity: 1;
 }
