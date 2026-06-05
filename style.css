@@ -235,7 +235,7 @@ nav h1 {
   font-size: 1.1rem;
   font-weight: 500;
   background: #fff;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d5f1fe;
   border-radius: 12px;
   transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
